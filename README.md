@@ -9,9 +9,11 @@ There is a search box for the user to enter a city name of choice.  When the use
 * function that talk to the API to get the users city info
 * function to display that and the subesequent five day forecast
 * function to display current date
+* line to change background image according to user city input
 
 # style.css
 * has all the style for the page
 
 # Screenshot
 
+![screen shot](https://user-images.githubusercontent.com/78169011/125180787-545ea980-e1cc-11eb-9038-9a63d9bed344.png)
