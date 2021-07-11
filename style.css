@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image:url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  height:100vh;
+  background-size:cover;
+}
+
+/*main weather card style*/
+#weather-data {
+  background-color: rgba(24, 93, 191, 0.49);
+    min-width: 400px;
+    min-height: 400px;
+    max-width:5500px;
+    border-radius: 30px;
+    margin-left:25%;
+    margin-right:25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch
+}
+
+/*text colours*/
+#temp, #high, #city-cond{
+  color: white
+}
+
+/*search box positioning*/
+.content form{
+  display:flex;
+  justify-content:left;
+  align-items:left;
+}
+.city-info-container{
+  display:flex;
+  width:100%
+}
+.city-data {
+  max-width:400px; 
+  
+}
+
+/*tytle colours*/
+.content h2 {
+  color:white;
+}
+
+.content h1{
+  color:white;
+}
+
+.table-box {
+  background-color:#4b6584;
+}
+
+/*five day forcast style*/
+.card {
+  background-color: rgba(24, 93, 191, 0.49);
+  margin: 3px;
+  min-height: 300px;
+}
+
+/*tytle colour*/
+.title {
+  color: #fff;
+}
+
+/*submit button*/
+#submit {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*media Querys*/
+@media only screen and (max-width: 599px) {
+
+  .column {
+    margin: 2px;
+    padding: 0 20px 0 20px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+}

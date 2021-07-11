@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <!--style sheets-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+</head>
+
+<body>
+  <!--Main weather card-->
+  <div class="column">
+    <div id="weather-data" class="box content">
+      <section id="info-section">
+        <div class="container">
+          <h1>Weather Dashboard</h1>
+          <form>
+            <input id="city-input" class="input is-info" type="text" placeholder="City Name"/>
+            <button id="submit" class="button is-info" type="submit">
+              Find the Forcast
+            </button>
+          </form>
+
+        </div>
+
+        <!-- City info  -->
+        <div class="column city-info-container">
+          <div class="city-data">
+            <h2 id="city-name"></h2>
+            <h4 id="temp"></h4>
+            <h4 id="high"></h4>
+            <h4 id="city-cond"></h4>
+            <div id="icon"></div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!--Five Forecast cards -->
+    <div class="container">
+      <div class="content">
+        <h2>5-Day Forecast:</h2>
+        <div class="columns">
+          <div class="column card">
+            <div id="day1" class="card-content">
+              <h3 id="date1" class="has-text-white"></h3>
+              <div id="icon1"></div>
+              <h4 id="temp1" class="has-text-white"></h4>
+              <h4 id="hum1" class="has-text-white"></h4>
+            </div>
+          </div>
+          <div class="column card">
+            <div id="day2" class="card-content">
+              <h3 id="date2" class="has-text-white"></h3>
+              <div id="icon2"></div>
+              <h4 id="temp2" class="has-text-white"></h4>
+              <h4 id="hum2" class="has-text-white"></h4>
+            </div>
+          </div>
+          <div class="column card">
+            <div id="day3" class="card-content">
+              <h3 id="date3" class="has-text-white"></h3>
+              <div id="icon3"></div>
+              <h4 id="temp3" class="has-text-white"></h4>
+              <h4 id="hum3" class="has-text-white"></h4>
+            </div>
+          </div>
+          <div class="column card">
+            <div id="day4" class="card-content">
+              <h3 id="date4" class="has-text-white"></h3>
+              <div id="icon4"></div>
+              <h4 id="temp4" class="has-text-white"></h4>
+              <h4 id="hum4" class="has-text-white"></h4>
+            </div>
+          </div>
+          <div class="column card">
+            <div id="day5" class="card-content">
+              <h3 id="date5" class="has-text-white"></h3>
+              <div id="icon5"></div>
+              <h4 id="temp5" class="has-text-white"></h4>
+              <h4 id="hum5" class="has-text-white"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+<!--scripts-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
