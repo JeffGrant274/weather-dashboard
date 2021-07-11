@@ -16,4 +16,4 @@ There is a search box for the user to enter a city name of choice.  When the use
 
 # Screenshot
 
-![screen shot](https://user-images.githubusercontent.com/78169011/125180787-545ea980-e1cc-11eb-9038-9a63d9bed344.png)
+![screen shot](https://user-images.githubusercontent.com/78169011/125181322-a950ee80-e1d1-11eb-9e5f-53ef2c32b5c8.png)
