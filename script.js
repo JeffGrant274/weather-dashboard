@@ -51,7 +51,7 @@ $(document).ready(function () {
       );
       $("#city-name").html(cityName + " " + "(" + NowMoment + ")");
       $("#city-cond").text("Current Conditions: " + cityCond);
-      $("#temp").text("Current Temp (F): " + cityTemp.toFixed(1));
+      $("#temp").text("Current Temp (C): " + cityTemp.toFixed(1));
       $("#date1").text(day1);
       $("#date2").text(day2);
       $("#date3").text(day3);
@@ -68,7 +68,7 @@ $(document).ready(function () {
      
         
       $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly" + "&units=imperial&appid=6736c4ffc3ee54196250626b736d2058",
+        url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly" + "&units=metric&appid=6736c4ffc3ee54196250626b736d2058",
         method: "GET",
       }).then(function (response) {
 
@@ -86,11 +86,11 @@ $(document).ready(function () {
         let icon4 = response.daily[4].weather[0].icon;
         let icon5 = response.daily[5].weather[0].icon;
         //
-        $("#temp1").text("Temp(F):" + " " + day1temp.toFixed(1));
-        $("#temp2").text("Temp(F):" + " " + day2temp.toFixed(1));
-        $("#temp3").text("Temp(F):" + " " + day3temp.toFixed(1));
-        $("#temp4").text("Temp(F):" + " " + day4temp.toFixed(1));
-        $("#temp5").text("Temp(F):" + " " + day5temp.toFixed(1));
+        $("#temp1").text("Temp(C):" + " " + day1temp.toFixed(1));
+        $("#temp2").text("Temp(C):" + " " + day2temp.toFixed(1));
+        $("#temp3").text("Temp(C):" + " " + day3temp.toFixed(1));
+        $("#temp4").text("Temp(C):" + " " + day4temp.toFixed(1));
+        $("#temp5").text("Temp(C):" + " " + day5temp.toFixed(1));
 
         $("#icon1").html(
           `<img src="http://openweathermap.org/img/wn/${icon1}@2x.png">`
